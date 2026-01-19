@@ -1,0 +1,45 @@
+#!/Users/wilson/python/bin/python
+
+import os
+import time
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEvent, FileSystemEventHandler
+from typing import List, Optional, Union
+from pathlib import Path
+
+
+class CompileNodeOnSave(FileSystemEventHandler):
+    project_dir: str = os.getcwd()
+    
+    
+    def on_modified(self, event: FileSystemEvent) -> None:
+        try: 
+            if self.is_model(event.src_path):
+                self.compile(event)
+        except KeyboardInterrupt: 
+            raise KeyboardInterrupt
+        except Exception: 
+            pass 
+    
+    def is_model(self, path: Union[str,bytes]): 
+        p = Path(path).relative_to(self.project_dir)
+        return p.suffix in ('.md', '.html', '.css')
+
+    def compile(self, event: FileSystemEvent): 
+        _ = os.system('cls' if os.name == 'nt' else 'clear')
+        _ = os.system('cls' if os.name == 'nt' else 'clear')
+        _ = os.system('pandoc resume.md -o resume.html --template=template.html --standalone')
+        
+
+
+if __name__ == '__main__':
+    event_handler = CompileNodeOnSave()
+    observer = Observer()
+    observer.schedule(event_handler, ".", recursive=True)
+    observer.start()
+    try:
+        while True:
+            time.sleep(1)
+    finally:
+        observer.stop()
+        observer.join()
