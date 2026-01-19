@@ -1,8 +1,12 @@
 ---
 title: Wilson Yip's Resume
-author: Wilson Yip
-description: > 
-  *Data Engineer & Scientist bridging the gap between complex mathematical modeling and robust data infrastructure. Leveraged a background in Mathematics to optimize NLP algorithms and build high-frequency asynchronous scrapers. Expert in Python, dbt, and Airflow, with a focus on creating scalable, secure, and observable data environments that ensure data integrity.*
+firstname: Wilson
+lastname: Yip
+gender: male
+image: https://wilsonkkyip.github.io/img/preview.png
+locale: en_GB
+description: Data Engineer & Scientist bridging the gap between complex mathematical modeling and robust data infrastructure. Leveraged a background in Mathematics to optimize NLP algorithms and build high-frequency asynchronous scrapers. Expert in Python, dbt, and Airflow, with a focus on creating scalable, secure, and observable data environments that ensure data integrity.
+keywords: Wilson Yip,Resume,Data Engineer,Data,Machine Learning
 contact: 
   linkedin: <a href="https://www.linkedin.com/in/wilsonkkyip/">wilsonyip@elitemail.org</a>
   github: <a href="https://github.com/wilsonkkyip/">https://github.com/wilsonkkyip/</a>

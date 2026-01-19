@@ -1,9 +1,21 @@
 <html>
 <head>
     <title>$title$</title>
+    <meta name="author" content="$firstname$ $lastname$">
+    <meta name="description" content="$description$">
+    <meta name="keywords" content="$keywords$">
     <meta charset="UTF-8">
-    <meta name="article:author" content="$author$">
+    <meta property="og:type" content="profile">
     <meta property="og:title" content="$title$">
+    <meta property="og:description" content="$description$">
+    <meta property="og:image" content="$image$">
+    <meta property="og:image:alt" content="$title$">
+    <meta property="og:locale" content="$locale$">
+    <meta property="profile:first_name" content="$firstname$">
+    <meta property="profile:last_name" content="$lastname$">
+    <meta property="profile:gender" content="$gender$">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://wilsonkkyip.github.io/favicons/favicon.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -33,16 +45,16 @@
         <div class="sheet">
             <section id="main">
                 <div class="introduction">
-                    <h1 class="owner">$author$</h1>
-                    $description$
+                    <h1 class="owner">$firstname$ $lastname$</h1>
+                    <div class="description"><p>$description$</p></div>
                 </div>
                 <div class="achievements">
                     <div id="experience">
-                        <h2>Experience<span class="icon-container"><i class="fa-solid fa-briefcase"></i></span></h2>
+                        <h2>Experience<span class="icon-container"><i class="iconify" data-icon="fluent:briefcase-12-filled"></i></span></h2>
                         <div class="job-list"></div>
                     </div>
                     <div id="education">
-                        <h2>Education<span class="icon-container"><i class="fa-solid fa-graduation-cap"></i></span></h2>
+                        <h2>Education<span class="icon-container"><i class="iconify" data-icon="fa-solid:graduation-cap"></i></span></h2>
                         <div class="education-list"></div>
                     </div>
                 </div>
