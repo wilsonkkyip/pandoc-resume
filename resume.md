@@ -24,7 +24,7 @@ resumeVersion:
   - name: HTML 
     location: 'https://wilsonkkyip.github.io/resume'
   - name: PDF
-    location: 'https://github.com/wilsonkkyip/pandoc-resume/blob/main/resume.pdf'
+    location: 'https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf'
 skills: 
   - name: Highlights
     content:
