@@ -16,11 +16,11 @@ languages:
     proficiency: Fluent 
 resumeVersion: 
   - name: Markdown
-    location: 'https://github.com/wilsonkkyip/pandoc-resume/resume.md'
+    location: 'https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md'
   - name: HTML 
     location: 'https://wilsonkkyip.github.io/resume'
   - name: PDF
-    location: 'https://github.com/wilsonkkyip/pandoc-resume/resume.pdf'
+    location: 'https://github.com/wilsonkkyip/pandoc-resume/blob/main/resume.pdf'
 skills: 
   - name: Highlights
     content:
