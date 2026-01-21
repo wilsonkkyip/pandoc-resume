@@ -5,6 +5,7 @@ lastname: Yip
 gender: male
 image: https://wilsonkkyip.github.io/img/preview.png
 locale: en_GB
+score: 99
 description: Data Engineer & Scientist bridging the gap between complex mathematical modeling and robust data infrastructure. Leveraged a background in Mathematics to optimize NLP algorithms and build high-frequency asynchronous scrapers. Expert in Python, dbt, and Airflow, with a focus on creating scalable, secure, and observable data environments that ensure data integrity.
 keywords: Wilson Yip,Resume,Data Engineer,Data,Machine Learning
 contact: 

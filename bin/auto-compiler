@@ -28,7 +28,7 @@ class CompileNodeOnSave(FileSystemEventHandler):
     def compile(self, event: FileSystemEvent): 
         _ = os.system('cls' if os.name == 'nt' else 'clear')
         _ = os.system('cls' if os.name == 'nt' else 'clear')
-        _ = os.system('pandoc resume.md -o resume.html --template=template.html --standalone')
+        _ = os.system('pandoc resume.md -o resume.html --lua-filter=main.lua --template=template.html --standalone')
         
 
 

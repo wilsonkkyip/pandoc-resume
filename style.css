@@ -251,13 +251,7 @@ section .section-title {
   justify-content: center;
   height: 1em;           /* Matches the height of the current text font-size */
   width: 1em;            /* Keeps the icon container square */
-}
-
-.icon-container i {
-  font-size: 0.85rem;      /* Slightly smaller icon often looks better balanced */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 0.85rem;
 }
 
 a {
