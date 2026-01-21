@@ -1,145 +1,285 @@
 <html>
-<head>
+  <head>
     <title>$title$</title>
-    <meta name="author" content="$firstname$ $lastname$">
-    <meta name="description" content="$description$">
-    <meta name="keywords" content="$keywords$">
-    <meta charset="UTF-8">
-    <meta property="og:type" content="profile">
-    <meta property="og:title" content="$title$">
-    <meta property="og:description" content="$description$">
-    <meta property="og:image" content="$image$">
-    <meta property="og:image:alt" content="$title$">
-    <meta property="og:locale" content="$locale$">
-    <meta property="profile:first_name" content="$firstname$">
-    <meta property="profile:last_name" content="$lastname$">
-    <meta property="profile:gender" content="$gender$">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="https://wilsonkkyip.github.io/favicons/favicon.ico"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="author" content="$firstname$ $lastname$" />
+    <meta name="description" content="$description$" />
+    <meta name="keywords" content="$keywords$" />
+    <meta charset="UTF-8" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="$title$" />
+    <meta property="og:description" content="$description$" />
+    <meta property="og:image" content="$image$" />
+    <meta property="og:image:alt" content="$title$" />
+    <meta property="og:locale" content="$locale$" />
+    <meta property="profile:first_name" content="$firstname$" />
+    <meta property="profile:last_name" content="$lastname$" />
+    <meta property="profile:gender" content="$gender$" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="https://wilsonkkyip.github.io/favicons/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        const skills = [
-            $for(skills)$
-            {
-                name: "$skills.name$",
-                content: [
-                    $for(skills.content)$
-                        {
-                            name: "$skills.content.name$",
-                            iconType: "$skills.content.iconType$",
-                            iconValue: "$skills.content.iconValue$",
-                            proficiency: "$skills.content.proficiency$"
-                        },
-                    $endfor$
-                ]
-            },
-            $endfor$
-        ];
-    </script>
-</head>
-<body>
-    <link rel="stylesheet" href="style.css">
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css" />
     <div class="back">
-        <div class="sheet">
-            <section id="main">
-                <div class="introduction">
-                    <h1 class="owner">$firstname$ $lastname$</h1>
-                    <div class="description"><p>$description$</p></div>
-                </div>
-                <div class="achievements">
-                    <div id="experience">
-                        <h2>Experience<span class="icon-container"><i class="iconify" data-icon="fluent:briefcase-12-filled"></i></span></h2>
-                        <div class="job-list"></div>
-                    </div>
-                    <div id="education">
-                        <h2>Education<span class="icon-container"><i class="iconify" data-icon="fa-solid:graduation-cap"></i></span></h2>
-                        <div class="education-list"></div>
-                    </div>
-                </div>
-                <div class="input-content">
-                    $body$
-                </div>
-            </section>
-            <section id="side">
-                <div id="contacts">
-                    <div class="section-title" id="contact-title">
+      <div class="sheet">
+        <section id="main">
+          <div class="introduction">
+            <h1 class="owner">$firstname$ $lastname$</h1>
+            <div class="description"><p>$description$</p></div>
+          </div>
+          <div class="achievements">
+            <div id="experience">
+              <h2>
+                Experience<span class="icon-container"
+                  ><i class="iconify" data-icon="fluent:briefcase-12-filled"></i
+                ></span>
+              </h2>
+              <div class="job-list">
+                $for(experiences)$
+                <div class="job-item">
+                  <div class="job-heading">
+                    <div class="job-company-role">
+                      <div class="job-company">
                         <div class="icon-text-wrapper">
-                            <span class="label-text">Contact Info</span>
-                            <span class="icon-container">
-                                <i class="iconify" data-icon="bxs:contact"></i>
-                            </span>
+                          <span class="label-text"
+                            >$experiences.institution$</span
+                          >
+                          <span class="icon-container">
+                            <i class="iconify" data-icon="mdi:city-variant"></i>
+                          </span>
                         </div>
-                    </div>
-                    <div class="contact-info icon-text-wrapper" id="contact-linkedin">
-                        <span class="icon-container">
-                            <i class="iconify" data-icon="fa6-brands:linkedin-in"></i>
-                        </span>
-                        <span class="label-text">$contact.linkedin$</span>
-                    </div>
-                    <div class="contact-info icon-text-wrapper" id="contact-github">
-                        <span class="icon-container">
-                            <i class="iconify" data-icon="fa6-brands:github"></i>
-                        </span>
-                        <span class="label-text">$contact.github$</span>
-                    </div>
-                    <div class="contact-info icon-text-wrapper" id="contact-website">
-                        <span class="icon-container">
-                            <i class="iconify" data-icon="fa-solid:globe"></i>
-                        </span>
-                        <span class="label-text">$contact.website$</span>
-                    </div>
-                </div>
-                <div id="skills">
-                    <div class="section-title" id="skills-title">
+                      </div>
+                      <div class="job-role">
                         <div class="icon-text-wrapper">
-                            <span class="label-text">Skills</span>
-                            <span class="icon-container">
-                                <i class="iconify" data-icon="ri:code-box-fill"></i>
-                            </span>
+                          <span class="label-text">$experiences.role$</span>
+                          <span class="icon-container">
+                            <i
+                              class="iconify"
+                              data-icon="mdi:account-circle"
+                            ></i>
+                          </span>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div id="languages">
-                    <div class="section-title" id="languages-title">
+                    <div class="job-location-date">
+                      <div class="job-location">
                         <div class="icon-text-wrapper">
-                            <span class="label-text">Languages</span>
-                            <span class="icon-container">
-                                <i class="iconify" data-icon="cil:language"></i>
-                            </span>
+                          <span class="icon-container">
+                            <i class="iconify" data-icon="mdi:map-marker"></i>
+                          </span>
+                          <span class="label-text">$experiences.location$</span>
                         </div>
+                      </div>
+                      <div class="job-date">
+                        <div class="icon-text-wrapper">
+                          <span class="icon-container">
+                            <i
+                              class="iconify"
+                              data-icon="ic:baseline-calendar-month"
+                            ></i>
+                          </span>
+                          <span class="label-text">$experiences.date$</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="language-list">
-                        $for(languages)$
-                        <div class="language-item" data-language-name="$languages.name$" data-language-proficiency="$languages.proficiency$">
-                            <span class="language-name">$languages.name$: </span>
-                            <span class="language-proficiency">$languages.proficiency$</span>
+                  </div>
+                  <div class="job-content">$experiences.content$</div>
+                </div>
+                $endfor$
+              </div>
+            </div>
+            <div id="education">
+              <h2>
+                Education<span class="icon-container"
+                  ><i class="iconify" data-icon="fa-solid:graduation-cap"></i
+                ></span>
+              </h2>
+              <div class="education-list">
+                $for(educations)$
+                <div class="education-item">
+                  <div class="education-heading">
+                    <div class="education-institution-degree">
+                      <div class="education-institution">
+                        <div class="icon-text-wrapper">
+                          <span class="label-text"
+                            >$educations.institution$</span
+                          >
+                          <span class="icon-container">
+                            <i class="iconify" data-icon="fa6-solid:school"></i>
+                          </span>
                         </div>
+                      </div>
+                      <div class="education-degree">
+                        <div class="icon-text-wrapper">
+                          <span class="label-text">$educations.role$</span>
+                          <span class="icon-container">
+                            <i
+                              class="iconify"
+                              data-icon="fa6-solid:user-graduate"
+                            ></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="education-location-date">
+                      <div class="education-location">
+                        <div class="icon-text-wrapper">
+                          <span class="icon-container">
+                            <i class="iconify" data-icon="mdi:map-marker"></i>
+                          </span>
+                          <span class="label-text">$educations.location$</span>
+                        </div>
+                      </div>
+                      <div class="education-date">
+                        <div class="icon-text-wrapper">
+                          <span class="icon-container">
+                            <i
+                              class="iconify"
+                              data-icon="ic:baseline-calendar-month"
+                            ></i>
+                          </span>
+                          <span class="label-text">$educations.date$</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="education-content">$educations.content$</div>
+                </div>
+                $endfor$
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="side">
+          <div id="contacts">
+            <div class="section-title" id="contact-title">
+              <div class="icon-text-wrapper">
+                <span class="label-text">Contact Info</span>
+                <span class="icon-container">
+                  <i class="iconify" data-icon="bxs:contact"></i>
+                </span>
+              </div>
+            </div>
+            <div class="contact-info icon-text-wrapper" id="contact-linkedin">
+              <span class="icon-container">
+                <i class="iconify" data-icon="fa6-brands:linkedin-in"></i>
+              </span>
+              <span class="label-text">$contact.linkedin$</span>
+            </div>
+            <div class="contact-info icon-text-wrapper" id="contact-github">
+              <span class="icon-container">
+                <i class="iconify" data-icon="fa6-brands:github"></i>
+              </span>
+              <span class="label-text">$contact.github$</span>
+            </div>
+            <div class="contact-info icon-text-wrapper" id="contact-website">
+              <span class="icon-container">
+                <i class="iconify" data-icon="fa-solid:globe"></i>
+              </span>
+              <span class="label-text">$contact.website$</span>
+            </div>
+          </div>
+          <div id="skills">
+            <div class="section-title" id="skills-title">
+              <div class="icon-text-wrapper">
+                <span class="label-text">Skills</span>
+                <span class="icon-container">
+                  <i class="iconify" data-icon="ri:code-box-fill"></i>
+                </span>
+              </div>
+            </div>
+            <div class="skill-categories">
+              $for(skills)$
+              <div class="skill-category">
+                <div class="skill-category-title">$skills.name$</div>
+                <div class="skill-list">
+                  $for(skills.content)$
+                  <div class="skill-item">
+                    <div class="skill-name-level">
+                      <div class="skill-name-icon icon-text-wrapper">
+                        <span class="skill-name">$skills.content.name$</span>
+                        <span class="icon-container">
+                          <i
+                            class="iconify"
+                            data-icon="$skills.content.iconValue$"
+                          ></i>
+                        </span>
+                      </div>
+                      <div class="skill-level">
+                        $for(skills.content.proficiency)$
+                        <span class="icon-container">
+                          <i
+                            class="iconify"
+                            data-icon="$skills.content.proficiency$"
+                          ></i>
+                        </span>
                         $endfor$
+                      </div>
                     </div>
+                  </div>
+                  $endfor$
                 </div>
-                <div id="resume-versions">
-                    <div class="section-title" id="versions-title">
-                        <div class="icon-text-wrapper">
-                            <span class="label-text">Resume Versions</span>
-                            <span class="icon-container">
-                                <i class="iconify" data-icon="mdi:file-document-multiple"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="version-list">
-                        $for(resumeVersion)$
-                        <div class="version-item">
-                            <a href="$resumeVersion.location$" target="_blank" rel="noopener noreferrer">$resumeVersion.name$</a>
-                        </div>
-                        $endfor$
-                    </div>
-                </div>
-            </section>
-        </div>
+              </div>
+              $endfor$
+            </div>
+          </div>
+          <div id="languages">
+            <div class="section-title" id="languages-title">
+              <div class="icon-text-wrapper">
+                <span class="label-text">Languages</span>
+                <span class="icon-container">
+                  <i class="iconify" data-icon="cil:language"></i>
+                </span>
+              </div>
+            </div>
+            <div class="language-list">
+              $for(languages)$
+              <div class="language-item">
+                <span class="language-name">$languages.name$: </span>
+                <span class="language-proficiency"
+                  >$languages.proficiency$</span
+                >
+              </div>
+              $endfor$
+            </div>
+          </div>
+          <div id="resume-versions">
+            <div class="section-title" id="versions-title">
+              <div class="icon-text-wrapper">
+                <span class="label-text">Resume Versions</span>
+                <span class="icon-container">
+                  <i class="iconify" data-icon="mdi:file-document-multiple"></i>
+                </span>
+              </div>
+            </div>
+            <div class="version-list">
+              $for(resumeVersion)$
+              <div class="version-item">
+                <a
+                  href="$resumeVersion.location$"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >$resumeVersion.name$</a
+                >
+              </div>
+              $endfor$
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-    <script src="main.js"></script>
-    <script src="skills.js"></script>
-</body>
+  </body>
 </html>

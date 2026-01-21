@@ -5,131 +5,106 @@ lastname: Yip
 gender: male
 image: https://wilsonkkyip.github.io/img/preview.png
 locale: en_GB
-score: 99
 description: Data Engineer & Scientist bridging the gap between complex mathematical modeling and robust data infrastructure. Leveraged a background in Mathematics to optimize NLP algorithms and build high-frequency asynchronous scrapers. Expert in Python, dbt, and Airflow, with a focus on creating scalable, secure, and observable data environments that ensure data integrity.
 keywords: Wilson Yip,Resume,Data Engineer,Data,Machine Learning
-contact: 
+contact:
   linkedin: <a href="https://www.linkedin.com/in/wilsonkkyip/">wilsonyip@elitemail.org</a>
   github: <a href="https://github.com/wilsonkkyip/">https://github.com/wilsonkkyip/</a>
   website: <a href="https://wilsonkkyip.github.io/">https://wilsonkkyip.github.io/</a>
-languages: 
+languages:
   - name: English
-    proficiency: Fluent 
+    proficiency: Fluent
   - name: Cantonese
     proficiency: Native
   - name: Mandarin
-    proficiency: Fluent 
-resumeVersion: 
+    proficiency: Fluent
+resumeVersion:
   - name: Markdown
-    location: 'https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md'
-  - name: HTML 
-    location: 'https://wilsonkkyip.github.io/resume'
+    location: "https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md"
+  - name: HTML
+    location: "https://wilsonkkyip.github.io/resume"
   - name: PDF
-    location: 'https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf'
-skills: 
+    location: "https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf"
+skills:
   - name: Highlights
     content:
       - name: Python
-        iconType: iconify
-        iconValue: 'fa6-brands:python'
+        iconValue: "fa6-brands:python"
         proficiency: 4
       - name: GCP
-        iconType: iconify
-        iconValue: 'simple-icons:googlecloud'
+        iconValue: "simple-icons:googlecloud"
         proficiency: 3
       - name: AWS
-        iconType: iconify
-        iconValue: 'fa-brands:aws'
+        iconValue: "fa-brands:aws"
         proficiency: 3
       - name: Docker
-        iconType: iconify
-        iconValue: 'fa-brands:docker'
+        iconValue: "fa-brands:docker"
         proficiency: 3
       - name: Terraform
-        iconType: iconify
-        iconValue: 'simple-icons:terraform'
+        iconValue: "simple-icons:terraform"
         proficiency: 3
       - name: GitHub Actions
-        iconType: iconify
-        iconValue: 'simple-icons:githubactions'
+        iconValue: "simple-icons:githubactions"
         proficiency: 3
       - name: Rust
-        iconType: iconify
-        iconValue: 'fa6-brands:rust'
+        iconValue: "fa6-brands:rust"
         proficiency: 3
   - name: Data Processing
     content:
       - name: R
-        iconType: iconify
-        iconValue: 'fa6-brands:r-project'
+        iconValue: "fa6-brands:r-project"
         proficiency: 4
       - name: Airflow
-        iconType: iconify
-        iconValue: 'devicon-plain:apacheairflow'
+        iconValue: "devicon-plain:apacheairflow"
         proficiency: 4
       - name: BigQuery
-        iconType: iconify
-        iconValue: 'simple-icons:googlebigquery'
+        iconValue: "simple-icons:googlebigquery"
         proficiency: 4
       - name: dbt
-        iconType: iconify
-        iconValue: 'simple-icons:dbt'
+        iconValue: "simple-icons:dbt"
         proficiency: 4
       - name: Spark
-        iconType: iconify
-        iconValue: 'simple-icons:apachespark'
+        iconValue: "simple-icons:apachespark"
         proficiency: 3
       - name: Tensorflow
-        iconType: iconify
-        iconValue: 'simple-icons:tensorflow'
+        iconValue: "simple-icons:tensorflow"
         proficiency: 3
       - name: Looker Studio
-        iconType: iconify
-        iconValue: 'simple-icons:looker'
+        iconValue: "simple-icons:looker"
         proficiency: 3
       - name: Grafana
-        iconType: iconify
-        iconValue: 'cib:grafana'
+        iconValue: "cib:grafana"
         proficiency: 3
       - name: PostgreSQL
-        iconType: iconify
-        iconValue: 'devicon-plain:postgresql'
+        iconValue: "devicon-plain:postgresql"
         proficiency: 3
       - name: MongoDB
-        iconType: iconify
-        iconValue: 'simple-icons:mongodb'
+        iconValue: "simple-icons:mongodb"
         proficiency: 3
       - name: Elasticsearch
-        iconType: iconify
-        iconValue: 'devicon-plain:elasticsearch'
+        iconValue: "devicon-plain:elasticsearch"
         proficiency: 3
   - name: Miscellaneous
     content:
       - name: Apps Script
-        iconType: iconify
-        iconValue: 'simple-icons:googleappsscript'
+        iconValue: "simple-icons:googleappsscript"
         proficiency: 4
       - name: Linux Bash
-        iconType: iconify
-        iconValue: 'devicon-plain:bash'
+        iconValue: "devicon-plain:bash"
         proficiency: 3
       - name: Ruby
-        iconType: iconify
-        iconValue: 'devicon-plain:ruby'
+        iconValue: "devicon-plain:ruby"
         proficiency: 3
       - name: D3.js
-        iconType: iconify
-        iconValue: 'simple-icons:d3'
+        iconValue: "simple-icons:d3"
         proficiency: 3
   - name: Administrative
     content:
       - name: Markdown
-        iconType: iconify
-        iconValue: 'logos:markdown'
+        iconValue: "simple-icons:markdown"
         proficiency: 4
-      - name: latex
-        iconType: null
-        iconValue: null
+      - name: Latex
+        iconValue: "devicon:latex"
         proficiency: 4
 ---
 
@@ -192,18 +167,16 @@ Sept, 2017 - Jan, 2022
 
 - Perform **statistical analysis** and **deploy machine learning models**, including
   **AB-testing**, **PCA**, **Poisson regression**, **k-means**, **hierarchical clustering**, **LDA
-  topic modelling**, etc. to perform analysis on different types of data. 
+  topic modelling**, etc. to perform analysis on different types of data.
   Develope and maintain **RShiny Dashboard** to visualise analysis results.
-
 
 ## Education
 
-
-### Society of Actuaries 
+### Society of Actuaries
 
 Probability (P) Exam
 
-Hong Kong 
+Hong Kong
 
 Mar, 2017
 
@@ -217,4 +190,3 @@ Sept, 2014 - Jul, 2017
 
 Major: Mathematics/Physics<br>
 Minor: Computational and Financial Mathematics
-
