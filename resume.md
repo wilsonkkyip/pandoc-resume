@@ -7,10 +7,12 @@ image: https://wilsonkkyip.github.io/img/preview.png
 locale: en_GB
 description: Data Engineer & Scientist bridging the gap between complex mathematical modeling and robust data infrastructure. Leveraged a background in Mathematics to optimize NLP algorithms and build high-frequency asynchronous scrapers. Expert in Python, dbt, and Airflow, with a focus on creating scalable, secure, and observable data environments that ensure data integrity.
 keywords: Wilson Yip,Resume,Data Engineer,Data,Machine Learning
+ga4_measurement_id: G-XQNDRLY681
+favicon: https://wilsonkkyip.github.io/favicons/favicon.ico
 contact:
   linkedin: <a href="https://www.linkedin.com/in/wilsonkkyip/">wilsonyip@elitemail.org</a>
   github: <a href="https://github.com/wilsonkkyip/">https://github.com/wilsonkkyip/</a>
-  website: <a href="https://wilsonkkyip.github.io/">https://wilsonkkyip.github.io/</a>
+  website: <a href="https://wilsonkkyip.github.io/?utm_source=resume_pdf&utm_medium=resume&utm_campaign=" class="pdf-link">https://wilsonkkyip.github.io/</a><a href="https://wilsonkkyip.github.io/?utm_source=resume_web&utm_medium=resume" class="web-link">https://wilsonkkyip.github.io/</a>
 languages:
   - name: English
     proficiency: Fluent
@@ -20,11 +22,14 @@ languages:
     proficiency: Fluent
 resumeVersion:
   - name: Markdown
-    location: "https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md"
+    on_web: "https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md"
+    on_pdf: "https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md"
   - name: HTML
-    location: "https://wilsonkkyip.github.io/resume"
+    on_web: "https://wilsonkkyip.github.io/resume?utm_source=resume_web&utm_medium=resume"
+    on_pdf: "https://wilsonkkyip.github.io/resume?utm_source=resume_pdf&utm_medium=resume&utm_campaign="
   - name: PDF
-    location: "https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf"
+    on_web: "https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf"
+    on_pdf: "https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf"
 skills:
   - name: Highlights
     content:

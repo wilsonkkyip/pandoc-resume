@@ -15,11 +15,7 @@
     <meta property="profile:last_name" content="$lastname$" />
     <meta property="profile:gender" content="$gender$" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/vnd.microsoft.icon"
-      href="https://wilsonkkyip.github.io/favicons/favicon.ico"
-    />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="$favicon$" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -30,6 +26,20 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
     ></script>
+    <script
+      type="text/javascript"
+      cookie-consent="tracking"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=$ga4_measurement_id$"
+    ></script>
+    <script type="text/javascript" cookie-consent="tracking">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "$ga4_measurement_id$");
+    </script>
   </head>
   <body>
     <link rel="stylesheet" href="style.css" />
@@ -272,9 +282,17 @@
               $for(resumeVersion)$
               <div class="version-item">
                 <a
-                  href="$resumeVersion.location$"
+                  href="$resumeVersion.on_pdf$"
                   target="_blank"
                   rel="noopener noreferrer"
+                  class="pdf-link"
+                  >$resumeVersion.name$</a
+                >
+                <a
+                  href="$resumeVersion.on_web$"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="web-link"
                   >$resumeVersion.name$</a
                 >
               </div>
