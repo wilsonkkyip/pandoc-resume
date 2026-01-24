@@ -17,6 +17,42 @@ function Meta(meta)
             meta.skills[i].content[j].proficiency = proficiency
         end
     end 
+
+    meta.contact.linkedin = {
+        pandoc.RawInline('html', string.format('<a href="%s">', meta.contact.linkedin[1].text)),
+        pandoc.Str(meta.email[1].text),
+        pandoc.RawInline('html', '</a>')
+    }
+
+    meta.contact.github = {
+        pandoc.RawInline('html', string.format('<a href="%s">', meta.contact.github[1].text)),
+        pandoc.Str(meta.contact.github[1].text),
+        pandoc.RawInline('html', '</a>')
+    }
+
+    meta.contact.website = {
+        pandoc.RawInline('html', string.format('<a href="%s" class="pdf-link">', string.format('%s?utm_source=resume_pdf&utm_medium=resume&utm_campaign=%s', meta.contact.website[1].text, meta.utm_campaign))),
+        pandoc.Str(meta.contact.website[1].text),
+        pandoc.RawInline('html', '</a>'),
+        pandoc.RawInline('html', string.format('<a href="%s" class="web-link">', meta.contact.website[1].text)),
+        pandoc.Str(meta.contact.website[1].text),
+        pandoc.RawInline('html', '</a>')
+    }
+
+    for i = 1, #meta.resumeVersion, 1
+    do 
+        if meta.resumeVersion[i].name[1].text == 'HTML'
+        then 
+            meta.resumeVersion[i].on_pdf = {
+                pandoc.Str(string.format('%s?utm_source=resume_pdf&utm_medium=resume&utm_campaign=%s', meta.resumeVersion[i].location[1].text, meta.utm_campaign))
+            }
+            meta.resumeVersion[i].on_web = meta.resumeVersion[i].location
+        else
+            meta.resumeVersion[i].on_pdf = meta.resumeVersion[i].location
+            meta.resumeVersion[i].on_web = meta.resumeVersion[i].location
+        end
+    end
+
     return meta
 end
 

@@ -9,10 +9,12 @@ description: Data Engineer & Scientist bridging the gap between complex mathemat
 keywords: Wilson Yip,Resume,Data Engineer,Data,Machine Learning
 ga4_measurement_id: G-XQNDRLY681
 favicon: https://wilsonkkyip.github.io/favicons/favicon.ico
+email: wilsonyip@elitemail.org
+test: <a href="https://google.com">google.com</a>
 contact:
-  linkedin: <a href="https://www.linkedin.com/in/wilsonkkyip/">wilsonyip@elitemail.org</a>
-  github: <a href="https://github.com/wilsonkkyip/">https://github.com/wilsonkkyip/</a>
-  website: <a href="https://wilsonkkyip.github.io/?utm_source=resume_pdf&utm_medium=resume&utm_campaign=" class="pdf-link">https://wilsonkkyip.github.io/</a><a href="https://wilsonkkyip.github.io/?utm_source=resume_web&utm_medium=resume" class="web-link">https://wilsonkkyip.github.io/</a>
+  linkedin: https://www.linkedin.com/in/wilsonkkyip
+  github: https://github.com/wilsonkkyip
+  website: https://wilsonkkyip.github.io
 languages:
   - name: English
     proficiency: Fluent
@@ -22,14 +24,11 @@ languages:
     proficiency: Fluent
 resumeVersion:
   - name: Markdown
-    on_web: "https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md"
-    on_pdf: "https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md"
+    location: "https://raw.githubusercontent.com/wilsonkkyip/pandoc-resume/refs/heads/main/resume.md"
   - name: HTML
-    on_web: "https://wilsonkkyip.github.io/resume?utm_source=resume_web&utm_medium=resume"
-    on_pdf: "https://wilsonkkyip.github.io/resume?utm_source=resume_pdf&utm_medium=resume&utm_campaign="
+    location: "https://wilsonkkyip.github.io/resume"
   - name: PDF
-    on_web: "https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf"
-    on_pdf: "https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf"
+    location: "https://github.com/wilsonkkyip/pandoc-resume/raw/refs/heads/main/resume.pdf"
 skills:
   - name: Highlights
     content:
