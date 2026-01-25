@@ -10,7 +10,6 @@ keywords: Wilson Yip,Resume,Data Engineer,Data,Machine Learning
 ga4_measurement_id: G-XQNDRLY681
 favicon: https://wilsonkkyip.github.io/favicons/favicon.ico
 email: wilsonyip@elitemail.org
-test: <a href="https://google.com">google.com</a>
 contact:
   linkedin: https://www.linkedin.com/in/wilsonkkyip
   github: https://github.com/wilsonkkyip
