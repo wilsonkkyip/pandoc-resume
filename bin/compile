@@ -1,0 +1,36 @@
+#!/Users/wilson/python/bin/python
+
+import click 
+import os 
+
+@click.command() 
+@click.option('--utm-campaign', default=None, help='UTM campaign parameter for tracking.')
+def compile(utm_campaign=None):
+    if utm_campaign:
+        _ = os.makedirs(f'outputs/{utm_campaign}', exist_ok=True)
+
+    output_html = f'outputs/{utm_campaign}/resume.html' if utm_campaign else 'resume.html'
+    compile_to_html = (
+        f'pandoc resume.md -o {output_html} '
+        f'--lua-filter=main.lua '
+        f'--template=template.html '
+        f'--standalone'
+        + (f' --metadata utm_campaign={utm_campaign}' if utm_campaign else '')
+    )
+    print(compile_to_html)
+    _ = os.system(compile_to_html)
+
+    output_pdf = f'outputs/{utm_campaign}/resume.pdf' if utm_campaign else 'resume.pdf'
+    compile_to_pdf = (
+        '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome '
+        f'--headless --disable-gpu '
+        f'--print-to-pdf="{output_pdf}" '
+        f'--no-pdf-header-footer {output_html}'
+    )
+    print(compile_to_pdf)
+    _ = os.system(compile_to_pdf)
+
+
+if __name__ == '__main__':
+    compile()
+

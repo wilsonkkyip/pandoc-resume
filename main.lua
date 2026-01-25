@@ -4,17 +4,21 @@ function Meta(meta)
         for j = 1, #meta.skills[i].content, 1
         do 
             proficiency = {}
+            pdf_proficiency = {}
             for k = 1, tonumber(pandoc.utils.stringify(meta.skills[i].content[j].proficiency)), 1
             do 
                 -- table.insert(proficiency, 'fa:circle')
                 table.insert(proficiency, 'line-md:circle-filled')
+                table.insert(pdf_proficiency, 'tabler:circle-filled')
             end
             for k = 1, 5 - tonumber(pandoc.utils.stringify(meta.skills[i].content[j].proficiency)), 1
             do 
                 -- table.insert(proficiency, 'fa-regular:circle')
                 table.insert(proficiency, 'line-md:circle')
+                table.insert(pdf_proficiency, 'tabler:circle')
             end
             meta.skills[i].content[j].proficiency = proficiency
+            meta.skills[i].content[j].pdf_proficiency = pdf_proficiency
         end
     end 
 
@@ -31,10 +35,10 @@ function Meta(meta)
     }
 
     meta.contact.website = {
-        pandoc.RawInline('html', string.format('<a href="%s" class="pdf-link">', string.format('%s?utm_source=resume_pdf&utm_medium=resume&utm_campaign=%s', meta.contact.website[1].text, meta.utm_campaign))),
+        pandoc.RawInline('html', string.format('<a href="%s" class="pdf-component">', string.format('%s?utm_source=resume_pdf&utm_medium=resume&utm_campaign=%s', meta.contact.website[1].text, meta.utm_campaign))),
         pandoc.Str(meta.contact.website[1].text),
         pandoc.RawInline('html', '</a>'),
-        pandoc.RawInline('html', string.format('<a href="%s" class="web-link">', meta.contact.website[1].text)),
+        pandoc.RawInline('html', string.format('<a href="%s" class="web-component">', meta.contact.website[1].text)),
         pandoc.Str(meta.contact.website[1].text),
         pandoc.RawInline('html', '</a>')
     }

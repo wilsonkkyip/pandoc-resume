@@ -233,10 +233,17 @@
                       </div>
                       <div class="skill-level">
                         $for(skills.content.proficiency)$
-                        <span class="icon-container">
+                        <span class="icon-container web-component">
                           <i
                             class="iconify"
                             data-icon="$skills.content.proficiency$"
+                          ></i>
+                        </span>
+                        $endfor$ $for(skills.content.pdf_proficiency)$
+                        <span class="icon-container pdf-component">
+                          <i
+                            class="iconify"
+                            data-icon="$skills.content.pdf_proficiency$"
                           ></i>
                         </span>
                         $endfor$
@@ -285,14 +292,14 @@
                   href="$resumeVersion.on_pdf$"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="pdf-link"
+                  class="pdf-component"
                   >$resumeVersion.name$</a
                 >
                 <a
                   href="$resumeVersion.on_web$"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="web-link"
+                  class="web-component"
                   >$resumeVersion.name$</a
                 >
               </div>
